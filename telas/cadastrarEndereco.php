@@ -9,11 +9,9 @@
   $inserir = new Inserir();
   $mensagem = "";
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    
-  if (!empty($_POST['codigo']) && is_numeric($_POST['codigo'])) {
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
-  $logradouro = $POST['logradouro'];
+  $logradouro = $_POST['logradouro'];
   $numero     = $_POST['numero'];
   $bairro     = $_POST['bairro'];
   $estado     = $_POST['estado'];
@@ -25,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                             $bairro,
                                             $estado,
                                             $cep);
-                                            $resultado = "Código inválido!";
-    }
+    } else {
+      $mensagem = "Código inválido!";
   }
 
 ?>
@@ -41,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <form>
+    <form method="POST">
       <div class="mb-3">
         <label for="logradouro" class="form-label">Logradouro: </label>
         <input type="text" class="form-control" id="logradouro" name="logradouro">

@@ -27,7 +27,29 @@ use Projeto\DAO\Conexao;
       }
       catch(Exception $erro)
       {
-        return "<br.<br> Algo deu errado!!!<br><br> $erro";
+        return "<br<br> Algo deu errado!!!<br><br> $erro";
+      }
+    }
+
+    public function cadastrarCliente(Conexao $conexao,
+                                     string $nome,
+                                     string $cnpj,
+                                     string $telefone)
+    {
+      try {
+        $conn = $conexao->conectar();
+        $sql = "INSERT INTO cliente(codigo, nome, cnpj, telefone, codigoEndereco) values('', '$nome','$cnpj','$telefone','')";
+        $result = mysqli_query($conn, $sql);
+
+        mysqli_close($conn);
+
+        if($result) {
+          return "<br><br> Inserido com sucesso!";
+        }
+        return "<br><br> Não inserido!";
+      }
+      catch(Exception $erro) {
+        return "<br><br> Algo deu errado!! <br><br> $erro";
       }
     }
   }

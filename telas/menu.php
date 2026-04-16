@@ -48,13 +48,13 @@
     </div>
     <div class="container">
       <h1>Empresa de Entregas</h1>
-      <a href="../index.php" class="btn btn-outline-info">Cadastrar Cliente</a>
-      <a href="../index.php" class="btn btn-outline-info">Cadastrar Encomenda</a>
-      <a href="../index.php" class="btn btn-outline-info">Cadastrar Entregador</a>
+      <a href="cadastrarCliente.php" class="btn btn-outline-info">Cadastrar Cliente</a>
+      <a href="cadastrarEncomenda.php" class="btn btn-outline-info">Cadastrar Encomenda</a>
+      <a href="cadastrarEntregador.php" class="btn btn-outline-info">Cadastrar Entregador</a>
       <a href="cadastrarEndereco.php" class="btn btn-outline-info">Cadastrar Endereço</a>
-      <a href="../index.php" class="btn btn-outline-info">Cadastrar Veiculo</a>
-      <a href="../index.php" class="btn btn-outline-info">Gerenciar</a>
-      <a href="../index.php" class="btn btn-outline-info">Sair</a>
+      <a href="cadastrarVeiculo.php" class="btn btn-outline-info">Cadastrar Veiculo</a>
+      <a href="gerenciar.php" class="btn btn-outline-info">Gerenciar</a>
+      <a href="sair.php" class="btn btn-outline-info">Sair</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

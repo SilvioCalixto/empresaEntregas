@@ -1,3 +1,37 @@
-.container {
-  margin: 0 auto;
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(67, 0, 138), rgb(86, 129, 158));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(183, 0, 255), rgb(6, 43, 109))
+  }
+
+
+  .select{
+      margin-bottom: 25px;
+  }
+
+section{
+  margin-bottom: 30px;
 }
+
+.titulo{
+  text-align: center;
+  font-family: 'Calibri', arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.palavra{
+  text-align: left;
+  font-family: 'Calibri', arial, sans-serif;
+}
+
+
+
+/* contato */
+
+
+/* fim contato*/

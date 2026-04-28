@@ -11,7 +11,6 @@ use Exception;
                                '',
                                'entregas');
       if($conn) {
-        echo "<br> Conectado com sucesso!";
         return $conn;
       }
       echo "Algo deu errado!";

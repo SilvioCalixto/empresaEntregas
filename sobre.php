@@ -9,7 +9,8 @@
   </head>
   <body>
       
-    <header>
+    
+  <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body fixed-top">
           <div class="container-fluid">
@@ -90,79 +91,75 @@
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
           <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-            Velocidade e cuidado<br />
-            <span style="color: hsl(218, 81%, 75%)">Em cada entrega.</span>
+            Quem<br />
+            <span style="color: hsl(218, 81%, 75%)">nós somos ?</span>
           </h1>
           <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Temporibus, expedita iusto veniam atque, magni tempora mollitia
             dolorum consequatur nulla, neque debitis eos reprehenderit quasi
-            ab ipsum nisi dolorem modi. Quos?
+            ab ipsum nisi dolorem modi. Quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis possimus animi ad unde ullam impedit omnis. Praesentium, eum fugit, totam soluta a aliquid, quam velit autem non rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi autem mollitia reprehenderit nam ad ex ullam, officia commodi quibusdam error voluptate, atque pariatur consectetur libero adipisci soluta laudantium repudiandae?
           </p>
         </div>
   
         <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
           <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
           <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-  
-          <div class="card bg-glass">
-            <div class="card-body px-4 py-5 px-md-5">
-              <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
 
-               
+          <div class="row">
+            <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-mdb-interval="10000">
+                  <img src="img/1.webp" class="d-block w-100" alt="homem segurando uma caixa de papelão"/>
+                </div>
+                <div class="carousel-item" data-mdb-interval="2000">
+                  <img src="img/3.jpg" class="d-block w-100" alt="Homens com caixas de papelão"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/4.webp" class="d-block w-100" alt="Caixas de papelão"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/6.jpg" class="d-block w-100" alt="homem com caneta anotando as informações das caixas de papelão"/>
+                </div>
+              </div>
+              <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
 
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="name" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Nome </label>
-                </div>
-  
-                <!-- Password input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Senha </label>
-                </div>
-  
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-left mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    Não sou um robô
-                  </label>
-                </div>
-  
-                <!-- Submit button -->
-
-                <a data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block-mb-4" href="telas/menu.php" role="button">Entrar</a>
-                <!-- Register buttons -->
-                <div class="text-left">
-                  <br>
-                  <p>Caso não tenha login <a href="cadastro.php">CADASTRE-SE </a></p>
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-facebook-f"></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-google"></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-twitter"></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-github"></i>
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h2>Nosso Trabalho</h2>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia est minus sequi pariatur veritatis, quos, eligendi alias laudantium accusamus qui suscipit ducimus. Rerum velit, illo nisi odit hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, omnis maiores magnam dolor unde animi beatae nisi nam ea quas. Aperiam dolore ad officiis deserunt facilis reiciendis impedit, quidem dolorem.</p>
+      </div>
+      <div class="col-md">
+        <h2>Diferenciais</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, accusantium laborum reprehenderit perspiciatis omnis exercitationem distinctio repudiandae corporis dolorem optio deserunt ad commodi expedita corrupti, delectus autem obcaecati accusamus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic enim unde inventore odio doloremque iure modi commodi! Iste facere porro consequuntur ratione eius nesciunt, eos, sit exercitationem fuga sequi quos.</p>
+      </div>
+      <div class="col-md">
+        <h2>proposito</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, incidunt? Repudiandae molestias harum, minima consectetur cupiditate sint nemo numquam dolores sit officia voluptas? Soluta, quod iure beatae ullam provident vel?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias esse excepturi id. Tempora, aliquid eligendi nam quod qui molestias, cum similique earum adipisci, minus sit dolore. Numquam, aut accusantium.</p>
+      </div>
+    </div>
+  </div>
 
         <!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -283,43 +280,7 @@
   <!-- Footer -->
   <!-- Section: Design Block -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<?php
-session_start();
-
-require_once('../../DAO/UsuarioDAO.php');
-
-use Projeto\DAO\UsuarioDAO;
-
-$dao = new UsuarioDAO();
-
-if($_POST){
-
-    $usuario = $dao->login(
-        $_POST['email'],
-        $_POST['senha']
-    );
-
-    if($usuario){
-        $_SESSION['usuario'] = $usuario['nome'];
-
-        header("Location: ../index.php");
-        exit;
-    } else {
-        echo "Email ou senha inválidos!";
-    }
-}
-?>
-
-<h2>Login</h2>
-
-<form method="POST">
-Email: <input type="email" name="email"><br><br>
-Senha: <input type="password" name="senha"><br><br>
-<button>Entrar</button>
-</form>
-
-<a href="cadastrar.php">Criar conta</a>

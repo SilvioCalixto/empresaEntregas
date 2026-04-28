@@ -1,19 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION['usuario'])){
-    header("Location: login.php");
-    exit;
-}
-
-
-session_start();
-session_destroy();
-
-header("Location: login.php");
-exit;
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -45,19 +29,10 @@ exit;
                   <a class="nav-link" aria-current="page" href="../telas/cadastrarEncomenda.php">Cadastrar Encomenda</a>
                 </li>
                 <li class="nav-item">
-                  <a href="cliente/listar.php">Clientes</a>
+                  <a class="nav-link" href="../telas/cadastrarVeiculo.php">Cadastrar Veiculo</a>
                 </li>
                 <li class="nav-item">
-                  <a href="entregador/listar.php">Entregadores</a>
-                </li>
-                <li class="nav-item">
-                  <a href="veiculo/listar.php">Veículos</a>
-                </li>
-                <li class="nav-item">
-                  <a href="encomenda/listar.php">Encomendas</a>
-                </li>
-                <li class="nav-item">
-                  <a href="roteiro/listar.php">Roteiros</a>
+                  <a class="nav-link" href="../telas/cadastrarEndereco.php">Cadastrar Endereço</a>
                 </li>
               </ul>
             </div>

@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+require_once('DAO/UsuarioDAO.php');
+
+use Projeto\DAO\UsuarioDAO;
+
+$dao = new UsuarioDAO();
+
+if($_POST){
+
+    $usuario = $dao->login(
+        $_POST['email'],
+        $_POST['senha']
+    );
+
+    if($usuario){
+        $_SESSION['usuario'] = $usuario['nome'];
+
+        header("Location: ../index.php");
+        exit;
+    } else {
+        echo "Email ou senha inválidos!";
+    }
+}
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -24,7 +51,8 @@
             >
               <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
+            <div class="collapse navbar-collapse " id="navbarExample01">
+            <img src="img/logo.png" alt="" width="200px">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="index.php">Home</a>
@@ -107,39 +135,41 @@
   
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form>
+              <form method="POST">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
 
-               
+                <h2>Login</h2>
 
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="name" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Nome </label>
+                    <label class="form-label" for="form3Example3">E-mail: </label>
+                    <input type="email" id="form3Example3" class="form-control" name="email"/>
+                    
                 </div>
   
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Senha </label>
+                  <label class="form-label" for="form3Example4">Senha: </label>
+                  <input type="password" id="form3Example4" class="form-control" name="password"/>
+                  
                 </div>
   
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-left mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
                   <label class="form-check-label" for="form2Example33">
-                    Não sou um robô
+                    Concordo com os <a href="#">termos de uso</a>
                   </label>
                 </div>
   
                 <!-- Submit button -->
 
-                <a data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block-mb-4" href="telas/menu.php" role="button">Entrar</a>
+                <a data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block-mb-4" href="cadastrar.php">Criar conta</a>
                 <!-- Register buttons -->
                 <div class="text-left">
                   <br>
-                  <p>Caso não tenha login <a href="cadastro.php">CADASTRE-SE </a></p>
+                  <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se </a></p>
                   <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-facebook-f"></i>
                   </button>
@@ -203,7 +233,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <i class="fas fa-gem me-3"><img src="img/logo.png" alt="" width="250px"></i>Company name
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -287,39 +317,3 @@
   </body>
 </html>
 
-<?php
-session_start();
-
-require_once('../../DAO/UsuarioDAO.php');
-
-use Projeto\DAO\UsuarioDAO;
-
-$dao = new UsuarioDAO();
-
-if($_POST){
-
-    $usuario = $dao->login(
-        $_POST['email'],
-        $_POST['senha']
-    );
-
-    if($usuario){
-        $_SESSION['usuario'] = $usuario['nome'];
-
-        header("Location: ../index.php");
-        exit;
-    } else {
-        echo "Email ou senha inválidos!";
-    }
-}
-?>
-
-<h2>Login</h2>
-
-<form method="POST">
-Email: <input type="email" name="email"><br><br>
-Senha: <input type="password" name="senha"><br><br>
-<button>Entrar</button>
-</form>
-
-<a href="cadastrar.php">Criar conta</a>

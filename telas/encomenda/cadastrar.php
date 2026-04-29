@@ -157,45 +157,6 @@ $roteiros = mysqli_query($conn, "SELECT * FROM roteiroEntrega");
         <!-- Navbar -->
       </header>
   
-
-
-<h1>Cadastrar Encomenda</h1>
-
-<form method="POST">
-
-Descrição:
-<input type="text" name="descricao"><br><br>
-
-Peso:
-<input type="number" step="0.01" name="peso"><br><br>
-
-Valor:
-<input type="number" step="0.01" name="valor"><br><br>
-
-Horário:
-<input type="time" name="horario"><br><br>
-
-Situação:
-<input type="text" name="situacao"><br><br>
-
-Cliente:
-<select name="cliente">
-<?php while($c = mysqli_fetch_assoc($clientes)){ ?>
-<option value="<?= $c['codigo'] ?>"><?= $c['nome'] ?></option>
-<?php } ?>
-</select><br><br>
-
-Roteiro:
-<select name="roteiro">
-<?php while($r = mysqli_fetch_assoc($roteiros)){ ?>
-<option value="<?= $r['codigo'] ?>">
-<?= $r['regiaoEntrega'] ?> - <?= $r['diaEntrega'] ?>
-</option>
-<?php } ?>
-</select><br><br>
-
-<button>Salvar</button>
-
 </form>
 <section class="background-radial-gradient overflow-hidden">
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
@@ -206,13 +167,13 @@ Roteiro:
             <span style="color: hsl(218, 81%, 75%)">rápido e simples</span>
           </h1>
           <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-            Cadastre novos clientes de forma prática e organizada. e    tecnologia.
-            <br>
-            Mantenha todas as informações centralizadas para facilitar
-            o gerenciamento das entregas e melhorar o atendimento.
-            <br>
-            Com poucos dados, você já consegue registrar e começar a utilizar
-            o cliente no sistema.
+            Registre novas encomendas de forma simples e organizada.<br><br>
+          
+            Preencha as informações necessárias para garantir o controle
+            completo da entrega, desde o envio até a finalização.<br><br>
+        
+            Com poucos dados, você já pode acompanhar o status
+            e manter sua operação sempre atualizada.
           </p>
         </div>
   
@@ -250,10 +211,38 @@ Roteiro:
                   <label class="form-label" for="form3Example4">Situação: </label>
                 </div>
 
-  
-                <!-- Submit button -->
 
-                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block-mb-4" type="submit">Cadastrar</button>
+                <!-- CLIENTE -->
+<div class="form-outline mb-4">
+  <select class="form-select" name="cliente" required>
+    
+    <option selected disabled>Selecione um cliente</option>
+
+    <?php while($c = mysqli_fetch_assoc($clientes)){ ?>
+      <option value="<?= $c['codigo'] ?>">
+        <?= $c['nome'] ?>
+      </option>
+    <?php } ?>
+
+  </select>
+</div>
+
+<!-- ROTEIRO -->
+<div class="form-outline mb-4">
+  <select class="form-select" name="roteiro" required>
+    
+    <option selected disabled>Selecione um roteiro</option>
+
+    <?php while($r = mysqli_fetch_assoc($roteiros)){ ?>
+      <option value="<?= $r['codigo'] ?>">
+        <?= $r['regiaoEntrega'] ?> - <?= $r['diaEntrega'] ?>
+      </option>
+    <?php } ?>
+
+  </select>
+</div>
+
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block-mb-4" >Cadastrar</button>
                 <!-- Register buttons -->
               </form>
             </div>

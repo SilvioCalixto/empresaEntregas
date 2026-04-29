@@ -199,6 +199,7 @@ $result = $dao->listar();
               <a href="editar.php?id=<?= $e['codigo'] ?>" class="btn btn-warning btn-sm">
                 ✏️
               </a>
+            
               <a href="?acao=excluir&id=<?= $e['codigo'] ?>" 
                  class="btn btn-danger btn-sm"
                  onclick="return confirm('Tem certeza que deseja excluir?')">

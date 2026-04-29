@@ -133,6 +133,9 @@ footer{
                 </li>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="menu.php"> Menu</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="../cliente/listar.php">Cliente</a>
                 </li>
                 </li>

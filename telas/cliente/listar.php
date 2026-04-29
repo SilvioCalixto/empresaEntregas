@@ -102,6 +102,9 @@ $result = $clienteDAO->listarComEndereco();
                 <li class="nav-item">
                   <a class="nav-link" href="../institucional/contato.php">Contato</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../institucional/menu.php"> Menu</a>
+                </li>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../cliente/listar.php">Cliente</a>
@@ -152,7 +155,6 @@ $result = $clienteDAO->listarComEndereco();
 
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h2 class="mb-0">Clientes</h2>
-      <a href="../institucional/menu.php" class="btn btn-success">Menu</a>
       <a href="cadastrar.php" class="btn btn-success">+ Novo Cliente</a>
     </div>
 
@@ -207,9 +209,6 @@ $result = $clienteDAO->listarComEndereco();
 </div>
 
 </section>
-</main>
-
-
 
         <!-- Footer -->
         <footer class="text-center text-lg-start bg-body-tertiary text-muted">

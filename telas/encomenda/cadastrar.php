@@ -202,7 +202,7 @@ Roteiro:
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
           <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-          Cadastro de Cliente<br />
+          Cadastro de Encomenda<br />
             <span style="color: hsl(218, 81%, 75%)">rápido e simples</span>
           </h1>
           <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
@@ -225,54 +225,31 @@ Roteiro:
               <form method="POST">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
-                <h4 class="mb-5 text-left"><strong>Dados do Cliente:</strong></h4>
+                <h4 class="mb-5 text-left"><strong>Especificações da Encomenda:</strong></h4>
 
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="nome"/>
-                  <label class="form-label" for="form3Example4">Nome: </label>
+                  <input type="text" id="form3Example4" class="form-control" name="descricao"/>
+                  <label class="form-label" for="form3Example4">Descrição: </label>
                 </div>
 
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     
-                    <input type="text" id="form3Example3" class="form-control" name="cnpj"/>
-                    <label class="form-label" for="form3Example3">Cnpj: </label>
+                    <input type="number" step="0.01" id="form3Example3" class="form-control" name="peso"/>
+                    <label class="form-label" for="form3Example3">Peso: </label>
                 </div>
   
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="telefone"/>
-                  <label class="form-label" for="form3Example4">Telefone: </label>
-                </div>
-
-                <hr>  
-
-                <h4 class="mb-5 text-left"><strong>Endereço:</strong></h4>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="logradouro"/>
-                  <label class="form-label" for="form3Example4">Logradouro: </label>
+                  <input type="time" id="form3Example4" class="form-control" name="horario"/>
+                  <label class="form-label" for="form3Example4">Horário: </label>
                 </div>
 
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="number" id="form3Example4" class="form-control" name="numero"/>
-                  <label class="form-label" for="form3Example4">Número: </label>
+                  <input type="text" id="form3Example4" class="form-control" name="situacao"/>
+                  <label class="form-label" for="form3Example4">Situação: </label>
                 </div>
 
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="bairro"/>
-                  <label class="form-label" for="form3Example4">Bairro: </label>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="estado"/>
-                  <label class="form-label" for="form3Example4">Estado: </label>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="cep"/>
-                  <label class="form-label" for="form3Example4">Cep: </label>
-                </div>
   
                 <!-- Submit button -->
 

@@ -195,7 +195,7 @@ if($_POST){
                 <!-- Register buttons -->
                 <div class="text-left">
                   <br>
-                  <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se </a></p>
+                  <p>Não tem uma conta? <a href="telas/usuario/cadastrar.php">Cadastre-se </a></p>
                 </div>
               </form>
             </div>

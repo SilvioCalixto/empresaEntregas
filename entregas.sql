@@ -113,4 +113,4 @@ CREATE TABLE usuario (
     nome VARCHAR(50),
     email VARCHAR(100) UNIQUE,
     senha VARCHAR(255)
-);
+)engine = InnoDB;

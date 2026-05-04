@@ -38,6 +38,8 @@ if($_POST){
     );
 
     echo "Cadastro realizado com sucesso!";
+    header("Location: listar.php");
+    exit;
 }
 ?>
 
@@ -46,7 +48,7 @@ if($_POST){
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CargoTech - Cadastrar Cliente</title>
+    <title>Cadastrar Cliente - CargoTech</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,52 +57,6 @@ if($_POST){
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
     </head>
   <body>
-  <style>
-      .background-radial-gradient {
-        background-color: hsl(218, 41%, 15%);
-        background-image: radial-gradient(650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%),
-          radial-gradient(1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%);
-      }
-  
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: -60px;
-        left: -130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: -60px;
-        right: -110px;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.9) !important;
-        backdrop-filter: saturate(200%) blur(25px);
-      }
-
-      table tbody tr:hover {
-        transform: scale(1.01);
-        transition: 0.2s;
-      }
-    </style>
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body fixed-top" >
@@ -210,7 +166,11 @@ if($_POST){
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     
-                    <input type="text" id="form3Example3" class="form-control" name="cnpj"/>
+                    <input type="text" id="form3Example3" class="form-control" name="cnpj" maxlength="18"
+                    placeholder="00.000.000/0000-00"
+                    pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}"
+                    title="Digite no formato: 00.000.000/0000-00"
+                    required/>
                     <label class="form-label" for="form3Example3">Cnpj: </label>
                 </div>
   
@@ -245,7 +205,11 @@ if($_POST){
                 </div>
 
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="cep"/>
+                  <input type="text" id="form3Example4" class="form-control" name="cep"
+                  placeholder="00000-000"
+                  pattern="\d{5}-\d{3}"
+                  title="Digite no formato: 00000-000"
+                  required/>
                   <label class="form-label" for="form3Example4">Cep: </label>
                 </div>
   

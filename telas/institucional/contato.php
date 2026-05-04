@@ -3,14 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CargoTech - Quem Somos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Entre em Contato - CargoTech</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
   </head>
+  <style>
+      .mapa {
+        width: 100%;
+        height: 400px;
+        border: 0;
+      }
+      
+      .card {
+        border-radius: 15px;
+        overflow: hidden;
+      }
+  </style>
   <body>
       
     <header>
@@ -64,62 +76,6 @@
 
   <!-- Section: Design Block -->
 <section class="background-radial-gradient overflow-hidden">
-    <style>
-      .background-radial-gradient {
-        background-color: hsl(218, 41%, 15%);
-        background-image: radial-gradient(650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%),
-          radial-gradient(1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%);
-      }
-  
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: -60px;
-        left: -130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: -60px;
-        right: -110px;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.9) !important;
-        backdrop-filter: saturate(200%) blur(25px);
-      }
-      .mapa {
-  width: 100%;
-  height: 400px;
-  border: 0;
-}
-
-.card {
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-h2 {
-  color: #fff;
-}
-    </style>
-  
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
@@ -197,7 +153,7 @@ h2 {
 <div class="row justify-content-center">
 
   <div class="col-md-8 text-center mb-4">
-    <h2>📍 Nossa Localização</h2>
+    <h2 style="color: #fff;">📍 Nossa Localização</h2>
     <p style="color:#ccc;">
       Estamos localizados em Santo André - SP, atendendo toda a região de São Paulo com eficiência, zelo com seu equipamentos e rapidez.
     </p>

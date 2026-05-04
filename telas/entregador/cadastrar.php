@@ -13,6 +13,8 @@ if($_POST){
     );
 
     echo "Cadastrado com sucesso!";
+    header("Location: listar.php");
+    exit;
 }
 ?>
 <!doctype html>
@@ -20,7 +22,7 @@ if($_POST){
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CargoTech - Cadastrar Cliente</title>
+    <title>Cadastrar Entregador - CargoTech</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,69 +31,7 @@ if($_POST){
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
     </head>
   <body>
-  <style>
-      .background-radial-gradient {
-        background-color: hsl(218, 41%, 15%);
-        background-image: radial-gradient(650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%),
-          radial-gradient(1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%);
-      }
-  
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: -60px;
-        left: -130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: -60px;
-        right: -110px;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-  
-      .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.9) !important;
-        backdrop-filter: saturate(200%) blur(25px);
-      }
-
-      table tbody tr:hover {
-        transform: scale(1.01);
-        transition: 0.2s;
-      }
-    </style>
     <header>
-<h1>Cadastrar Entregador</h1>
-
-<form method="POST">
-
-Nome:
-<input type="text" name="nome"><br><br>
-
-CPF:
-<input type="text" name="cpf"><br><br>
-
-CNH:
-<input type="text" name="cnh"><br><br>
-
-<button>Salvar</button>
-
-</form>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body fixed-top" >
           <div class="container-fluid">
@@ -204,12 +144,21 @@ CNH:
   
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="cnh"/>
+                  <input type="text" id="form3Example4" class="form-control" name="cnh"
+                  placeholder="Somente números (11 dígitos)"
+                  inputmode="numeric"
+                  pattern="\d{11}"
+                  title="Digite apenas 11 números"
+                  required/>
                   <label class="form-label" for="form3Example4">Cnh: </label>
                 </div>
 
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example4" class="form-control" name="cpf"/>
+                  <input type="text" id="form3Example4" class="form-control" name="cpf"
+                  placeholder="000.000.000-00"
+                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                  title="Digite no formato: 000.000.000-00"
+                  required/>
                   <label class="form-label" for="form3Example4">Cpf: </label>
                 </div>
 

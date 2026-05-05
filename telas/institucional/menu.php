@@ -109,18 +109,18 @@ footer{
         <nav class="navbar navbar-expand-lg bg-body fixed-top">
           <div class="container-fluid">
             <button
-              data-mdb-collapse-init
               class="navbar-toggler"
               type="button"
+              data-mdb-toggle="collapse"
               data-mdb-target="#navbarExample01"
               aria-controls="navbarExample01"
               aria-expanded="false"
               aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
+              >
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarExample01">
-            <a href="../../index.php"><img src="../../img/logo.png" alt="" width="200px"></a>
+            <a href="../../index.php"><img src="../../img/logo.png" class="mx-auto d-block text-center" width="200px"></a>
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="../../index.php">Início</a>
@@ -156,8 +156,7 @@ footer{
                 </li>
               </ul>
             </div>
-          </div>
-          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-facebook-f"></i>
                   </button>
   
@@ -172,88 +171,82 @@ footer{
                   <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-github"></i>
                   </button>
+          </div>
         </nav>
         <!-- Navbar -->
       </header>
 
-      <div class="container vh-100 cartao">
-  <div class="row gx-lg-5 h-100 d-flex align-content-center text-white">
-    <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center">
-      <div class="animation-delay fade">
-        <h1 class="mb-4 opacity-90" style="color: hsl(218, 81%, 95%)">
+      <div class="container min-vh-100 cartao py-5">
+  <div class="row gx-lg-5 d-flex align-items-center text-white">
+
+    <!-- TEXTO -->
+    <div class="col-12 col-md-6 mb-5 mb-md-0 d-flex align-items-center">
+      <div class="animation-delay fade text-center text-md-start">
+
+        <h1 class="mb-4 opacity-90">
           Oferta Exclusiva!
         </h1>
 
-        <h5 class="mb-4 opacity-80" style="color: hsl(218, 81%, 90%)">
-        Mais que entregas — uma experiência completa em tecnologia, crédito e vantagens.
+        <h5 class="mb-4 opacity-80">
+          Mais que entregas — uma experiência completa em tecnologia, crédito e vantagens.
         </h5>
 
-        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+        <p class="mb-4 opacity-70">
           O Cartão CargoTech foi criado para oferecer mais controle, vantagens exclusivas e uma experiência completa aos nossos clientes.
-          <br>
-          Com ele, você acompanha suas entregas em tempo real, tem acesso prioritário aos serviços e uma gestão mais eficiente de todas as suas encomendas.
-          <br>
-          Além disso, o cartão funciona como uma solução de crédito, permitindo compras em grandes varejistas do setor tecnológico, com condições especiais e maior praticidade.
-          <br>
-          Clientes CargoTech também contam com benefícios exclusivos, como descontos em cinemas, teatros e parceiros selecionados.
-          <br>
-          Mais tecnologia, mais vantagens e mais controle em cada entrega.
+          <br><br>
+          Acompanhe suas entregas em tempo real e tenha acesso prioritário aos serviços.
+          <br><br>
+          Funciona como solução de crédito com vantagens em grandes varejistas.
+          <br><br>
+          Benefícios exclusivos como descontos em cinemas e parceiros.
         </p>
 
-        <a
-           class="btn btn-white btn-rounded btn-lg me-3 opacity-80"
-           href="#"
-           role="button"
-           data-ripple-color="hsl(218, 41%, 45%)"
-           >Peça Agora</a
-          >
-        <a
-           class="btn btn-outline-white btn-rounded btn-lg opacity-80"
-           href="#"
-           role="button"
-           >Saiba Mais</a
-          >
+        <a class="btn btn-white btn-rounded btn-lg me-2 mb-2">
+          Peça Agora
+        </a>
+
+        <a class="btn btn-outline-white btn-rounded btn-lg mb-2">
+          Saiba Mais
+        </a>
+
       </div>
     </div>
 
-    <div class="col-md-5 offset-md-1 mb-4 mb-md-0 position-relative">
-      <div
-           id="shape-1"
-           class="
-                  position-absolute
-                  rounded-circle
-                  shadow-5-strong
-                  fade fade-delay-small
-                  "
-           ></div>
-      <div
-           id="shape-2"
-           class="position-absolute shadow-5-strong fade fade-delay-medium"
-           ></div>
-      <div
-           id="card-custom"
-           class="card shadow-6 rounded-6 fade fade-delay-big card-custom"
-           >
-        <div class="card-body p-5 opacity-90 ls-widest">
-          <h2>
+    <!-- CARD -->
+    <div class="col-12 col-md-5 offset-md-1 mb-4 position-relative text-center">
+
+      <!-- FORMAS (opcional, pode remover se quiser) -->
+      <div id="shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+      <div id="shape-2" class="position-absolute shadow-5-strong"></div>
+
+      <!-- CARTÃO -->
+      <div id="card-custom" class="card shadow-6 rounded-6 card-custom mx-auto" style="max-width: 350px;">
+
+        <div class="card-body p-4">
+          <h4>
             <strong>Membro</strong> <span class="fw-light">CargoTech</span>
-          </h2>
+          </h4>
         </div>
-        <div
-             class="card-footer px-5 border-0 opacity-90 ls-widest fw-light"
-             >
+
+        <div class="card-footer px-4 border-0">
+
           <img
-               id="chip"
-               class="mb-5"
-               src="https://ascensus-youtube-projects.mdbgo.io/img/chip.png"
-               alt="chip"
-               />
-          <h5 class="mb-5">4981 5678 9012 3456</h5>
-          <p class="mb-2">John Dorian</p>
-          <p class="mb-5">12/30</p>
+            id="chip"
+            class="mb-4"
+            src="https://ascensus-youtube-projects.mdbgo.io/img/chip.png"
+            alt="chip"
+          />
+
+          <h6 class="mb-4">4981 5678 9012 3456</h6>
+
+          <p class="mb-1">John Dorian</p>
+          <p>12/30</p>
+
         </div>
       </div>
+
     </div>
+
   </div>
 </div>
 
@@ -367,8 +360,7 @@ footer{
   
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2026 Copyright: Desenvolvido por
-      <a class="text-reset fw-bold" href="https://github.com/SilvioCalixto" target="_blank">Silvio Calixto</a>
+    Desenvolvido por <a class="text-reset fw-bold" href="https://github.com/SilvioCalixto" target="_blank">Silvio Calixto</a> © 2026 Copyright
     </div>
     <!-- Copyright -->
   </footer>

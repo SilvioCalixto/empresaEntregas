@@ -50,18 +50,18 @@ $roteiros = mysqli_query($conn, "SELECT * FROM roteiroEntrega");
         <nav class="navbar navbar-expand-lg bg-body fixed-top" >
           <div class="container-fluid">
             <button
-              data-mdb-collapse-init
               class="navbar-toggler"
               type="button"
+              data-mdb-toggle="collapse"
               data-mdb-target="#navbarExample01"
               aria-controls="navbarExample01"
               aria-expanded="false"
               aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
+              >
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarExample01">
-            <a href="../../index.php"><img src="../../img/logo.png" alt="" width="200px"></a>
+            <a href="../../index.php"><img src="../../img/logo.png" class="mx-auto d-block text-center" width="200px"></a>
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="../../index.php">Início</a>
@@ -97,8 +97,7 @@ $roteiros = mysqli_query($conn, "SELECT * FROM roteiroEntrega");
                 </li>
               </ul>
             </div>
-          </div>
-          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-facebook-f"></i>
                   </button>
   
@@ -113,6 +112,7 @@ $roteiros = mysqli_query($conn, "SELECT * FROM roteiroEntrega");
                   <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                     <i class="fab fa-github"></i>
                   </button>
+          </div>
         </nav>
         <!-- Navbar -->
       </header>
@@ -327,8 +327,7 @@ $roteiros = mysqli_query($conn, "SELECT * FROM roteiroEntrega");
   
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2026 Copyright: Desenvolvido por
-      <a class="text-reset fw-bold" href="https://github.com/SilvioCalixto" target="_blank">Silvio Calixto</a>
+    Desenvolvido por <a class="text-reset fw-bold" href="https://github.com/SilvioCalixto" target="_blank">Silvio Calixto</a> © 2026 Copyright
     </div>
     <!-- Copyright -->
   </footer>
